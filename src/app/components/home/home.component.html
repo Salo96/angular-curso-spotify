@@ -1,0 +1,22 @@
+<!-- <ul>
+    <li *ngFor="let pais of paises">
+        {{ pais.name }} - {{ pais.population | number }}
+    </li>
+</ul> -->
+
+<app-loading *ngIf="loading"></app-loading>
+
+<app-tarjetas [items]="NuevasCanciones"></app-tarjetas>
+
+<!-- <div  class="card-columns" >
+    <div *ngFor="let cancion of NuevasCanciones" class="card">
+        <img [src]="cancion.images|noimage" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"> {{ cancion.name }} </h5>
+            <p class="card-text">
+                <span *ngFor="let artista of cancion.artists"  class="badge badge-primary">{{ artista.name }}</span>
+            </p>
+            <p class="card-text">{{ cancion.release_date }}</p>
+        </div>
+    </div>
+</div> -->
